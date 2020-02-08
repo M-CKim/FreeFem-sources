@@ -915,8 +915,8 @@ template<class Type>
 long globalNumbering(Type* const& A, KN<long>* const& numbering) {
     if(A) {
         numbering->resize(2 + A->getMatrix()->_n);
-        unsigned int g;
-        unsigned int* num = reinterpret_cast<unsigned int*>(&((*numbering)[0]));
+        long long g;
+        long* num = numbering->operator long*();
         A->distributedNumbering(num + 2, num[0], num[1], g);
     }
     return 0L;
