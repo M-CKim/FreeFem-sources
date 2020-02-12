@@ -35,6 +35,7 @@ All notable changes to this project will be documented in this file.
 - new function extract, allows to build a curve mesh from a 2d mesh (can extract a labeled boundary, apply a geometric transformation)
 - ffglut can plot a vectorial FE function in surface 3d
 - distributed ParMmg interface, cf. `examples/hpddm/distributed-parmmg.edp`
+- ability to solve problems in single precision or with 64 bit integers
 
 ### Changed
 - new `tgv` values: -10 => zero row, -20 => zero row/column

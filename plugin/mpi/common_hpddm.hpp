@@ -150,7 +150,7 @@ class Pair {
         }
 };
 
-template<class A> inline AnyType DeleteDTOR(Stack, const AnyType& x) {
+template<class A> inline AnyType DeleteDTOR(Stack, const AnyType &x) {
     A* a = PGetAny<A>(x);
     a->dtor();
     a = NULL;
